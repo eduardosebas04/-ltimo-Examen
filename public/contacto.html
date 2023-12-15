@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/peru.png">
+    <title>El Cocinero - Experiencia Culinaria</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/contacto.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">El Cocinero</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <div style="padding: 20px; margin-top: 20px;">
+        <h2 style="color: black; font-size: 28px; font-weight: bold;">HORARIO</h2>
+    </div>
+    <div class="cr">
+        <img src="img/arbol.jpg" alt="">
+        <p style="width: 50%; text-align: center; padding: 20px; font-weight: bold;">
+            ¿Listo para disfrutar de la comida criolla en [La Cocina]? ¡Contáctanos para reservas o preguntas! Estamos ansiosos por ofrecerte una experiencia culinaria inolvidable de Lunes a Sabado 1:00PM a 8:00 PM.
+        </p>
+    </div> 
+    <div style="padding: 20px; margin-top: 20px;">
+        <h2 style="color: red; font-size: 28px; font-weight: bold;">PEDIDIOS</h2>
+    </div>
+    <div class="xss">
+        <img src="img/Playa.jpg" alt="">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Ventas</td>
+                    <td>
+                        <select id="txtDistrito" onchange="mostrarPrecio();">
+                            <option value="1">Gumbo</option>
+                            <option value="2">Feijoada</option>
+                            <option value="3">Arroz con Gandules</option>
+                            <option value="4">Mofongo</option>
+                            <option value="5">Jollof Rice</option>
+                            <option value="6">Ajiaco</option>
+                            <option value="7">Gallo Pinto</option>
+                            <option value="8">Ceviche</option>
+                            <option value="9">Gazpacho</option>
+                            <option value="10">Arepa</option>
+                            <option value="11">Bandeja Paisa</option>
+                            <option value="12">Lobio</option>
+                            <option value="13">Poke</option>
+                            <option value="14">Laksa</option>
+                            <option value="15">Piri Piri Chicken</option>
+                            <option value="16">Matambre a la Pizza</option>
+                            <option value="17">Sancocho</option>
+                            <option value="18">Bunny Chow</option>
+                            <option value="19">Kibbeh</option>
+                            <option value="20">Balut</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Precio (S/)</td>
+                    <td><input type="text" id="numP1" disabled></td>
+                </tr>
+                <tr>
+                    <td>Cantidad</td>
+                    <td><input type="number" value="0" min="0" max="10" id="numP2"></td>
+                </tr>
+                <tr>
+                    <td>Producto Total</td>
+                    <td><input type="text" id="txtNota" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="c3" onclick="calcular()" value="Procesar"></td>
+                    <td><input type="button" class="btn" onclick="limpiar()" value="Limpiar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div style="padding: 20px; margin-top: 20px;">
+        <h2 style="color: red; font-size: 28px; font-weight: bold;">UBICACIÓN</h2>
+    </div>
+    <tr>
+        <td colspan="2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.339597118075!2d-77.01751959999997!3d-12.08888809999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c87c3fa3ea43%3A0xdcb88a5762dc8801!2sEl%20Criollo!5e0!3m2!1ses-419!2spe!4v1702626789588!5m2!1ses-419!2spe" width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+    </tr>
+    <div class="or" style="background-color: black; padding: 20px; margin-top: 100px;">
+        <h2 style="color: white; font-size: 28px; font-weight: bold;">Número: 934 563 701</h2>
+    </div>
+</body>
+</html>

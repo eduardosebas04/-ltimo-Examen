@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(255, 236, 179);
+    color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    padding: 20px 40px;
+    background-color: rgb(255, 245, 225);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(76, 175, 80);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: rgb(76, 175, 80);
+}
+
+.main-content {
+    padding: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: rgb(76, 175, 80);
+    margin-bottom: 20px;
+}
+
+.main-content img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 10px solid rgb(255, 204, 128);
+}
+
+.main-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.specialty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.specialty-img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.specialty-name {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.xss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.xss img {
+    width: 48%; 
+    border: 10px solid rgb(255, 204, 128);
+}
+
+.xss p {
+    width: 48%; 
+    text-align: left;
+    padding: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.cr {
+    position: relative;
+}
+
+.cr img {
+    width: 100%; 
+    display: block;
+}
+
+.cr p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
